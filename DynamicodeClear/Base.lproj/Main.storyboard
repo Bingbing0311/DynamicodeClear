@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EHa-3R-gQv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--功能大全-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OT5-Cg-sul">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="a4V-dd-oVA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="yoR-Jg-svi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OT5-Cg-sul" secondAttribute="trailing" id="BND-0W-BXX"/>
+                            <constraint firstItem="OT5-Cg-sul" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CQb-fa-N3N"/>
+                            <constraint firstItem="OT5-Cg-sul" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="JJo-x9-tD2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OT5-Cg-sul" secondAttribute="bottom" id="gXs-zw-Wre"/>
+                            <constraint firstItem="OT5-Cg-sul" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jAJ-Dn-74t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="功能大全" id="4w6-Q1-h8k">
+                        <barButtonItem key="leftBarButtonItem" title="动联" id="hNc-xS-4YR"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="OT5-Cg-sul" id="gbK-jZ-Bjw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584.5" y="150.5"/>
+        </scene>
+        <!--蓝牙连接-->
+        <scene sceneID="vGy-Ww-c4N">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="OQj-Pv-ppE" customClass="BluetoothViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T8M-o0-0Hg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ep2-3K-lxj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BMJ-wl-dm4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="635-5z-HQy">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OQj-Pv-ppE" id="Psq-kW-n7G"/>
+                                    <outlet property="delegate" destination="OQj-Pv-ppE" id="eTW-Le-UXS"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="635-5z-HQy" secondAttribute="trailing" id="FA3-KR-8Ep"/>
+                            <constraint firstItem="635-5z-HQy" firstAttribute="centerX" secondItem="BMJ-wl-dm4" secondAttribute="centerX" id="HkR-nv-mm2"/>
+                            <constraint firstItem="ep2-3K-lxj" firstAttribute="top" secondItem="635-5z-HQy" secondAttribute="bottom" id="dbz-po-wFf"/>
+                            <constraint firstItem="635-5z-HQy" firstAttribute="leading" secondItem="BMJ-wl-dm4" secondAttribute="leading" id="n2I-Ww-1eX"/>
+                            <constraint firstItem="635-5z-HQy" firstAttribute="top" secondItem="T8M-o0-0Hg" secondAttribute="bottom" id="n5H-zL-9xO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="蓝牙连接" id="2Wv-eO-ytX">
+                        <barButtonItem key="leftBarButtonItem" title="断开" id="CVi-LR-y5h">
+                            <connections>
+                                <action selector="disconnectionClick:" destination="OQj-Pv-ppE" id="buC-zI-GrN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="搜索" id="z5A-Jq-mhb">
+                            <connections>
+                                <action selector="searchClick:" destination="OQj-Pv-ppE" id="LKH-wu-Ox1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="635-5z-HQy" id="X6Z-Sz-9fL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDW-df-vSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1584.5" y="875.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="drS-HL-icD">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="EHa-3R-gQv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tiq-yy-Ktv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mEf-uD-9wR" kind="relationship" relationship="viewControllers" id="Bez-WS-ES5"/>
+                        <segue destination="p6l-io-6YH" kind="relationship" relationship="viewControllers" id="nqD-Jk-Ihp"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4wi-te-TiB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="502.5" y="352.5"/>
+        </scene>
+        <!--蓝牙-->
+        <scene sceneID="DPx-w0-8ql">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="p6l-io-6YH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="蓝牙" image="lanya2" selectedImage="lanya1" id="Tzo-7B-FNR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gFr-EV-tTx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OQj-Pv-ppE" kind="relationship" relationship="rootViewController" id="GS7-HJ-TaE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ox3-WI-8OF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.5" y="875.5"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="e7B-Fu-PU3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mEf-uD-9wR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="home2" selectedImage="home1" id="ZpC-a1-WZZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1om-ga-LA8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L93-LC-Swq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8e0-2Q-27h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1101.5" y="150.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home1" width="32" height="32"/>
+        <image name="home2" width="32" height="32"/>
+        <image name="lanya1" width="32" height="32"/>
+        <image name="lanya2" width="32" height="32"/>
+    </resources>
+</document>
